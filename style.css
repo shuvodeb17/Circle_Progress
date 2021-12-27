@@ -1,0 +1,273 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+
+}
+h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  width: 20%;
+  margin: auto;
+}
+h6{
+  color: rgb(0, 0, 0);
+  margin-top: 3%;
+}
+.circle-wrap {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 110px;
+  height: 110px;
+  background: #bdbdbd;
+  /* box-shadow: 5px 6px 6px #d9d9d9, 
+              -5px -6px 6px #bfbfbd; */
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3,
+.circle-wrap .circle .fill-4,
+.circle-wrap .circle .fill-5,
+.circle-wrap .circle .fill-6,
+.circle-wrap .circle .fill-7,
+.circle-wrap .circle .fill-8 {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask {
+  clip: rect(0px, 110px, 110px, 55px);
+}
+.circle-wrap .inside-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 96px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #000;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.mask .fill-1 {
+  clip: rect(0px, 55px, 110px, 0px);
+  background-color: greenyellow;
+}
+
+.mask.full-1,
+.circle .fill-1 {
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(180deg);
+}
+.mask .fill-2 {
+  clip: rect(0px, 55px, 110px, 0px);
+  background-color: greenyellow;
+}
+
+.mask.full-2,
+.circle .fill-2 {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(135deg);
+}
+
+
+.mask .fill-3 {
+  clip: rect(0px, 55px, 150px, 0px);
+  background-color: greenyellow;
+}
+
+.mask.full-3,
+.circle .fill-3 {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(144deg);
+}
+
+.mask .fill-4 {
+  clip: rect(0px, 55px, 110px, 0px);
+  background-color: greenyellow;
+}
+
+.mask.full-4,
+.circle .fill-4 {
+  animation: fill-4 ease-in-out 3s;
+  transform: rotate(151deg);
+  -webkit-animation: fill-4 ease-in-out 3s;
+}
+
+.mask .fill-5 {
+  clip: rect(0px, 55px, 110px, 0px);
+  background-color: greenyellow;
+}
+
+.mask.full-5,
+.circle .fill-5 {
+  animation: fill-5 ease-in-out 3s;
+  transform: rotate(90deg);
+  -webkit-animation: fill-5 ease-in-out 3s;
+}
+
+.mask .fill-6 {
+  clip: rect(0px, 55px, 110px, 0px);
+  background-color: greenyellow;
+}
+
+.mask.full-6,
+.circle .fill-6 {
+  animation: fill-6 ease-in-out 3s;
+  transform: rotate(105deg);
+  -webkit-animation: fill-6 ease-in-out 3s;
+}
+
+.mask .fill-7 {
+  clip: rect(0px, 55px, 110px, 0px);
+  background-color: greenyellow;
+}
+
+.mask.full-7,
+.circle .fill-7 {
+  animation: fill-7 ease-in-out 3s;
+  transform: rotate(57deg);
+  -webkit-animation: fill-7 ease-in-out 3s;
+}
+
+.mask .fill-8 {
+  clip: rect(0px, 55px, 110px, 0px);
+  background-color: greenyellow;
+}
+
+.mask.full-8,
+.circle .fill-8 {
+  animation: fill-8 ease-in-out 3s;
+  transform: rotate(79deg);
+  -webkit-animation: fill-8 ease-in-out 3s;
+}
+
+
+/* All Animation */
+@keyframes fill-1{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+}
+@keyframes fill-2{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes fill-3{
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(144deg);
+    -webkit-transform: rotate(144deg);
+    -moz-transform: rotate(144deg);
+    -ms-transform: rotate(144deg);
+    -o-transform: rotate(144deg);
+  }
+}
+@keyframes fill-4{
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(151deg);
+    -webkit-transform: rotate(151deg);
+    -moz-transform: rotate(151deg);
+    -ms-transform: rotate(151deg);
+    -o-transform: rotate(151deg);
+}
+}
+@keyframes fill-5{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+}
+@keyframes fill-6{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(105deg);
+    -webkit-transform: rotate(105deg);
+    -moz-transform: rotate(105deg);
+    -ms-transform: rotate(105deg);
+    -o-transform: rotate(105deg);
+}
+}
+@keyframes fill-7{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(57deg);
+    -webkit-transform: rotate(57deg);
+    -moz-transform: rotate(57deg);
+    -ms-transform: rotate(57deg);
+    -o-transform: rotate(57deg);
+}
+}
+@keyframes fill-8{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(79deg);
+    -webkit-transform: rotate(79deg);
+    -moz-transform: rotate(79deg);
+    -ms-transform: rotate(79deg);
+    -o-transform: rotate(79deg);
+}
+}
+
+
+/* Responsive */
+@media (max-width:575px) {
+  .circle-wrap {
+    margin: auto;
+    margin-top: 20%;
+}
+h6 {
+  margin-top: 9%;
+  font-size: 24px;
+}
+h1 {
+  width: 36%;
+}
+}
+
